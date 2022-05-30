@@ -1,0 +1,146 @@
+@charset "UTF-8";
+
+$imagenes:  width: 300px, height: 400, border: 2px;
+
+
+@mixin imagenes {
+    width: 300px;
+  height: 400;
+  border: 2px;
+}
+
+/* Estilo de título/logo */
+.navbar-brand {
+  font-family: 'Old Standard TT', serif;
+  font-size: 2rem;
+  padding: 1rem; }
+
+/*Estilo fotos*/
+.fotoinicio {
+  @include imagenes ($imagenes) }
+
+img {
+    @include imagenes ($imagenes) }
+
+.imgbio {
+  width: 300px;
+  height: 450px; }
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+
+header {
+  padding: 0.1rem; }
+
+.fotoinicio1:hover {
+  transform: scale(1.1, 1.1);
+  transition: all 1s ease; }
+
+.fotoinicio2:hover {
+  transform: scale(1.1, 1.1);
+  transition: all 1s ease; }
+
+.fotoinicio3:hover {
+  transform: scale(1.1, 1.1);
+  transition: all 1s ease; }
+
+footer {
+  padding: 1.5rem; }
+
+h4 {
+  font-size: 0.9rem;
+  text-align: end; }
+
+.shop {
+  font-family: 'Old Standard TT', serif;
+  font-size: 1.5rem;
+  padding: 1rem;
+  text-align: center; }
+
+.btn-primary {
+  color: #fff;
+  background-color: lightslategray;
+  border-color: lightslategray; }
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: lightslategray;
+  border-color: lightslategray;
+  transform: scale(0.9); }
+
+.row > * {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding: 2rem;
+  margin-top: var(--bs-gutter-y); }
+
+/*Estilos bio*/
+h3.h3bio {
+  font-size: 1.7rem;
+  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Old Standard TT', serif; }
+
+h3 {
+  font-size: 1.7rem;
+  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Old Standard TT', serif; }
+
+.contenedorbio {
+  display: grid;
+  grid-template-columns: 600px 500px;
+  justify-content: center;
+  padding: 3rem;
+  justify-content: space-around; }
+
+.mainbio {
+  padding: 2rem; }
+
+img.imgbio {
+  margin: 0.5rem;
+  padding: 0.5rem; }
+
+p.textbio {
+  padding: 2rem;
+  margin-top: 5rem;
+  font-size: 1.1rem; }
+
+.lista {
+  display: grid;
+  justify-content: flex-start; }
+
+.contacto {
+  display: grid;
+  padding: 2rem;
+  margin: 2rem; }
+
+/* Estilos Portfolio*/
+section.imgpersonal {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr); }
+
+/*Estilos trabajo*/
+h2.titulotrabajos {
+  font-size: 1rem;
+  padding: 1rem;
+  margin: 5rem; }
+
+section.trabajo1 {
+  display: inline-block;
+  font-size: inherit;
+  justify-content: center; }
+
+section.trabajo2 {
+  display: inline-block;
+  font-size: inherit;
+  justify-content: center; }
+
+section.trabajo3 {
+  display: inline-block;
+  font-size: inherit;
+  justify-content: center; }
